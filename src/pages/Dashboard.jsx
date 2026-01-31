@@ -19,6 +19,7 @@ function Dashboard() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
     document.body.style.background = darkMode ? "#111827" : "#f4f6f8";
+    document.getElementsByClassName("container")[0].style.background = darkMode ? "#a2b3c3" : "#fff";
   }, [tasks, darkMode]);
 
   const addTask = (taskData) => {
