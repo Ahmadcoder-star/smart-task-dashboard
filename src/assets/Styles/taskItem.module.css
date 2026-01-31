@@ -1,0 +1,32 @@
+.card {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    background: #e6fffa;
+    text-decoration: line-through;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: #e5e7eb;
+    margin-right: 6px;
+}
+
+.deleteBtn {
+    background: #dc2626;
+    text-decoration: none !important;
+    color: white;
+    border: none;
+    /* padding: 6px 12px; */
+    border-radius: 4px;
+    cursor: pointer;
+}
