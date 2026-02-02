@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { FaTrash, FaCheck, FaEdit, FaSave, FaTimes } from "react-icons/fa";
+import { FaTrash, FaEdit, FaSave, FaTimes } from "react-icons/fa";
 import styles from "../assets/styles/taskItem.module.css";
 
 function TaskItem({ task, onDelete, onToggleComplete, onEdit }) {
@@ -16,6 +16,7 @@ function TaskItem({ task, onDelete, onToggleComplete, onEdit }) {
     if (editText.trim() === "") return;
     onEdit(task.id, editText);
     setIsEditing(false);
+    alert("Task updated successfully!");
   };
 
   return (
@@ -70,6 +71,7 @@ function TaskItem({ task, onDelete, onToggleComplete, onEdit }) {
             <button onClick={() => setIsEditing(false)}>
               <FaTimes />
             </button>
+            
           </>
         )}
       </div>
